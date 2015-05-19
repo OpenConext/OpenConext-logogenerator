@@ -1,0 +1,11 @@
+{
+    "name": "openconext/logogenerator",
+    "description": "Generate logo's for displaying in OpenConext",
+    "authors": [
+        {
+            "name": "Martin de Keijzer",
+            "email": "mdkeijzer@ibuildings.nl"
+        }
+    ],
+    "require": {}
+}
