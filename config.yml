@@ -1,0 +1,18 @@
+# Basic YAML Configuration for logo image generator
+---
+# Configuration of the source images path
+source:
+  image_directory: '/tmp/images'
+
+# Configuration for the destination images
+destination:
+  extension: 'jpg'
+  # List of formats to use,
+  formats:
+    - maxwidth: 200
+      maxheight: 80
+
+    - maxwidth: 160
+      maxheight: 60
+
+  image_directory: '/tmp/resized'
