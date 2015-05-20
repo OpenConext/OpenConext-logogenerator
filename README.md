@@ -1,13 +1,32 @@
 # OpenConext-logogenerator
 
+## Requirements
+- PHP 5.3+ with the GD Library
+- Composer
+- Command line access
+
+## Installation
+- Clone this repository
+- Load the dependencies using Composer (https://getcomposer.org/).
+
 ## Usage
-In the bin folder the script can generate logo images from the service registry and place these in a 'cached' directory on the 'www'-directories.
+The logogenerator.php is an executable command line script which read the config.yml to generate thumbnail images.
 
-The command usage is 
-`bin/logogenerator.php`
+Example config.yml (as distributed by the repo);
+    # Basic YAML Configuration for logo image generator
+    ---
+    # Configuration of the source images path
+    source:
+        image_directory: '/tmp/images'
 
-The command will ask you for the required parameters. For the purpose of putting this command in a cronjob these parameters can also be given as arguments:
-
-* -s <url>: Service Registry URL to the connections JSON
-* -u <username>: Service Registry HTTP username
-* -p <password>: Service Registry HTTP password
+    # Configuration for the destination images
+    destination:
+      # List of formats to use,
+      formats:
+        - maxwidth: 200
+          maxheight: 80
+    
+        - maxwidth: 160
+          maxheight: 60
+    
+      image_directory: '/tmp/resized'
