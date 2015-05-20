@@ -13,6 +13,7 @@
 The logogenerator.php is an executable command line script which read the config.yml to generate thumbnail images.
 
 Example config.yml (as distributed by the repo);
+
     # Basic YAML Configuration for logo image generator
     ---
     # Configuration of the source images path
