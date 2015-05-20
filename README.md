@@ -22,6 +22,8 @@ Example config.yml (as distributed by the repo);
 
     # Configuration for the destination images
     destination:
+      # Output format extension
+      extension: 'jpg'
       # List of formats to use,
       formats:
         - maxwidth: 200
